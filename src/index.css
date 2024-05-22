@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100svh;
+  font-size: 1rem;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+p {
+  max-width: 75ch;
+  text-wrap: pretty;
+}
+
+button {
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: 700;
+}
+
+input,
+button,
+.radio,
+textarea,
+.radio {
+  border-radius: 8px;
+}
+
+button {
+  transition: all 0.5s linear;
+}
+
+input,
+.radio,
+textarea {
+  border: 1px solid hsl(187, 24%, 22%);
+  outline: none;
+  padding-block: 0.5rem;
+  padding-left: 1rem;
+  color: hsl(187, 24%, 22%);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+input:hover,
+.radio:hover {
+  border: 1px solid hsl(169, 82%, 27%);
+  cursor: pointer;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
